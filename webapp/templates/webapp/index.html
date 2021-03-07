@@ -1,0 +1,238 @@
+{% extends 'webapp/base.html' %}
+
+{% load static %}
+
+{% block title %} <title> Home </title> {% endblock %}
+
+{% block content %}
+
+
+<!-- banner -->
+<section class="hero-area hero-area-lg position-relative">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+        <h1 class="text-dark position-relative">The IT Hardware and Software Resellers<span class="watermark">Danconsult</span></h1>
+        <p class="text-dark mb-4"></p>
+        <ul class="list-inline">
+          <li class="list-inline-item mx-1 my-2">
+            <a href="{% url 'quote' %}" class="btn btn-primary">
+              <img src="{% static 'images/icon/google-play-white.png' %}" class="img-fluid mr-2 rounded" alt="play-store"> Request a Quote</a>
+          </li>
+          <li class="list-inline-item mx-1 my-2">
+            <a href="{% url 'about' %}" class="btn btn-outline-primary"><i class=""></i>Learn More
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'images/banner/banner-3.png' %}" class="img-fluid w-100 shadow rounded-lg" alt="app-interface" data-aos="fade-left" data-aos-delay="1000">
+      </div>
+    </div>
+  </div>
+  <img src="{% static 'images/homepage-3/banner-shape.png' %}" class="img-fluid bg-shape-4" alt="shape">
+</section>
+<!-- banner -->
+
+<!-- feature -->
+<section class="position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="00">
+        <div class="card border-0 shadow rounded-xs pt-5">
+          <div class="card-body">
+            <i class="fa fa-desktop icon-lg icon-blue icon-bg-blue icon-bg-circle mb-3"></i>
+            <h4 class="mt-4 mb-3">Exclusive Service</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed do</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <div class="card border-0 shadow rounded-xs pt-5">
+          <div class="card-body">
+            <i class="fa fa-gears icon-lg icon-orange icon-bg-orange icon-bg-circle mb-3"></i>
+            <h4 class="mt-4 mb-3">Best Quality of Products</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed do</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+        <div class="card border-0 shadow rounded-xs pt-5">
+          <div class="card-body">
+            <i class="fa fa-clock-o icon-lg icon-green icon-bg-green icon-bg-circle mb-3"></i>
+            <h4 class="mt-4 mb-3">24 Hour Service</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed do</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="{% static 'images/dot/dot-1.png' %}" class="img-fluid feature-bg-shape-1" alt="background-dots">
+  <img src="{% static 'images/shape/shape-bg.png' %}" class="img-fluid feature-bg-shape-2" alt="background-shape">
+</section>
+<!-- feature -->
+
+<!-- integration -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 pr-lg-5">
+        <img src="{% static 'images/integration/integration-2.png' %}" class="img-fluid" alt="dashboard" data-aos="fade-right">
+      </div>
+      <div class="col-md-6 pl-lg-5">
+        <p class="subtitle" data-aos="fade-up">01</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Value-based Solutions</h2>
+        <p class="mb-4" data-aos="fade-up" data-aos-delay="400">We deliver IT Solutions that add measurable bottom-line value to our client's general business.</p>
+        <ul class="list-unstyled">
+          <li class="d-flex mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="pr-3 pr-lg-5">
+              <i class="fa fa-check text-secondary bg-white shadow icon-sm"></i>
+            </div>
+            <div>
+              <h5>Extreme Security</h5>
+              <p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore
+                magna.</p>
+            </div>
+          </li>
+          <li class="d-flex" data-aos="fade-up" data-aos-delay="550">
+            <div class="pr-3 pr-lg-5">
+              <i class="fa fa-check text-secondary bg-white shadow icon-sm"></i>
+            </div>
+            <div>
+              <h5>Extreme Security</h5>
+              <p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore
+                magna.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 pr-lg-5">
+        <p class="subtitle" data-aos="fade-up">02</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Eausmod tempor magna nostrud exercitation</h2>
+        <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi
+          aliquip commodo consequat. duis aute.</p>
+        <p class="mb-4" data-aos="fade-up" data-aos-delay="400">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint
+          occaecat cupidatat non proident.</p>
+        <a href="#" class="mb-4 btn btn-outline-primary" data-aos="fade-up" data-aos-delay="500">read nore</a>
+      </div>
+      <div class="col-md-6 pl-lg-5">
+        <img src="images/integration/integration-3.png" class="img-fluid" alt="dashboard" data-aos="fade-left" data-aos-delay="200">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- integration -->
+
+<!-- partners -->
+<section class="bg-dark py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+         <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-4-alt.png' %}" alt="partner-4"></li>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+        <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-3-alt.png' %}" alt="partner-3"></li>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+        <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-2-alt.png' %}" alt="partner-2"></li>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0 text-center">
+        <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-1-alt.png' %}" alt="partner-1"></li>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- partners -->
+
+<!-- download -->
+<section class="">
+  <div class="container">
+    <div class="row">
+      
+     
+        
+      <!-- parthner -->
+      
+      <div class="col-lg-12">
+        <ul class="list-inline d-flex justify-content-between align-items-center position-relative zindex-1">
+          <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-1-alt.png' %}" alt="partner-1"></li>
+          <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-2-alt.png' %}" alt="partner-2"></li>
+          <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-3-alt.png' %}" alt="partner-3"></li>
+          <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-4-alt.png' %}" alt="partner-4"></li>
+          <li class="list-inline-item"><img class="img-fluid p-2" src="{% static 'images/partner/client-logo-5-alt.png' %}" alt="partner-5"></li>
+        </ul>
+      </div>
+      <!-- parthner -->
+    </div>
+  </div>
+</section>
+<!-- download -->
+
+<!-- testimonial -->
+<section class="section bg-light bg-map">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" >
+        <img class="img-fluid" src="{% static 'images/homepage-3/testimonial-img.png' %}" alt="clients">
+      </div>
+      <div class="col-md-6">
+        <p class="subtitle">testimonials</p>
+        <h2 class="section-title mb-5">What Our Clients Says?</h2>
+        <div class="testimonial-slider-single">
+          <div class="slider-item">
+            <img class="mb-5" src="{% static 'images/quotation/quotation.png' %}" alt="quote-icon">
+            <p class="font-italic mb-4">Lorem ipsum dolor sit amet consectetur adipicing elit sed do
+              usmod tempor
+              incididunt.enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip
+              commodo.</p>
+            <h5 class="text-dark">Liam Hughes</h5>
+            <h6 class="text-color">Happy client</h6>
+          </div>
+          <div class="slider-item">
+            <img class="mb-5" src="{% static 'images/quotation/quotation.png' %}" alt="quote-icon">
+            <p class="font-italic mb-4">Lorem ipsum dolor sit amet consectetur adipicing elit sed do
+              usmod tempor
+              incididunt.enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip
+              commodo.</p>
+            <h5 class="text-dark">Liam Hughes</h5>
+            <h6 class="text-color">Happy client</h6>
+          </div>
+          <div class="slider-item">
+            <img class="mb-5" src="{% static 'images/quotation/quotation.png' %}" alt="quote-icon">
+            <p class="font-italic mb-4">Lorem ipsum dolor sit amet consectetur adipicing elit sed do
+              usmod tempor
+              incididunt.enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip
+              commodo.</p>
+            <h5 class="text-dark">Liam Hughes</h5>
+            <h6 class="text-color">Happy client</h6>
+          </div>
+          <div class="slider-item">
+            <img class="mb-5" src="{% static 'images/quotation/quotation.png' %}" alt="quote-icon">
+            <p class="font-italic mb-4">Lorem ipsum dolor sit amet consectetur adipicing elit sed do
+              usmod tempor
+              incididunt.enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip
+              commodo.</p>
+            <h5 class="text-dark">Liam Hughes</h5>
+            <h6 class="text-color">Happy client</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testimonial -->
+
+
+
+
+
+{% endblock %}

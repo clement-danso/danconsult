@@ -1,0 +1,204 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.themefisher.com/agico/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Feb 2021 05:54:54 GMT -->
+<head>
+  <meta charset="utf-8">
+ {% block title %} <title>Base Template</title>{% endblock %}
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="{% static 'plugins/font-awesome/font-awesome.min.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- venobox -->
+  <link rel="stylesheet" href="{% static 'plugins/venobox/venobox.css' %}">
+  <!-- slick -->
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <!-- AOS -->
+  <link rel="stylesheet" href="{% static 'plugins/aos/aos.css' %}">
+
+  <!-- Main Stylesheet -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  
+
+
+</head>
+
+<body>
+ <!-- preloader start -->
+  <!-- preloader end -->
+
+  <div class="preloader">
+    <img src="{% static 'images/preloader.gif' %}" alt="preloader" class="img-fluid">
+  </div>
+
+<!-- nav part start -->
+<div class="naviagtion naviagtion-white fixed-top transition">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand p-0" href="{% url 'home' %}"><img src="images/logo/logo-dark.png" alt="Danconsult LTD"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark text-capitalize" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark text-capitalize" href="{% url 'about' %}">Company</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link text-dark text-capitalize" href="{% url 'home' %}">Our Team</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link text-dark text-capitalize" href="{% url 'products' %}">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark text-capitalize" href="{% url 'services' %}">services</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link text-dark text-capitalize dropdown-toggle" href="#" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">pages</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item text-color" href="team.html">Our Team</a>
+              <a class="dropdown-item text-color" href="pricing.html">Our Pricing</a>
+              <a class="dropdown-item text-color" href="career.html">Our Career</a>
+            </div>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link text-dark text-capitalize" href="blog.html">blog</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link text-dark text-capitalize" href="{% url 'contact' %}">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- nav part end -->
+
+{% block content %}
+
+
+
+{% endblock %}
+<!-- subscription 
+<section class="subscription bg-white">
+  <div class="container">
+    <div class="subscription-wrapper">
+      <div class="d-flex position-relative mx-5 justify-content-between align-items-center flex-column flex-md-row text-center text-md-left">
+        <h3 class="flex-fill">Subscribe <br> to our newsletter</h3>
+        <form action="#" class="row flex-fill">
+          <div class="col-lg-7 my-md-2 my-2">
+            <input type="email" class="form-control px-4 border-0 w-100 text-center text-md-left" id="email" placeholder="Your Email" name="email">
+          </div>
+          <div class="col-lg-5 my-md-2 my-2">
+            <button type="submit" class="btn btn-primary btn-lg border-0 w-100">Subscribe Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+subscription -->
+
+<!-- footer part start -->
+<footer class="bg-secondary pt-5">
+  <section class="section border-bottom border-color">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <img src="images/logo/logo.png" class="mb-4" alt="Danconsult">
+          <p class="text-light mb-4">UK's largest independent resellers for IT equipments and software </p>
+          <ul class="list-inline social-icons">
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/danconsultuk" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/danconsultuk" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <!-- <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA/featured" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li class="list-inline-item"><a href="http://github.com/themefisher" target="_blank"><i class="fa fa-github"></i></a></li>-->
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4 class="text-white mb-4">Quick Links</h4>
+          <ul class="list-styled list-hover-underline">
+            <li class="mb-3 text-light"><a href="{% url 'about' %}" class="text-light">Company</a></li>
+            <li class="mb-3 text-light"><a href="{% url 'quote' %}" class="text-light">Request a Quote</a></li>
+            <li class="mb-3 text-light"><a href="{% url 'contact' %}" class="text-light">Contact Us</a></li>
+            <li class="mb-3 text-light"><a href="#" class="text-light">Terms and Conditions</a></li>
+            <li class="mb-3 text-light"><a href="#" class="text-light">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="text-white mb-4">Contact Info</h4>
+          <p class="text-light">47 Polesdon Avenue | Swindon | SN3 6AE | United Kingdom</p>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-light" href="tel:+211234565523">+44(0)1793951902</a></li>
+            <li class="mb-3"><a class="text-light" href="mailto:admin@danconsult.co.uk">Send us an email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer part end -->
+
+  <!-- copyright part start -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-light">Copyright &copy;
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script>
+            Danconsult Ltd. <p>Developed by <a href="https://quodasystems.com/">Quoda Systems</a></p>
+            </p>
+        </div>
+        <div class="col-md-6 text-md-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-light">Terms of Service</a></li>
+            <li class="list-inline-item">| &nbsp;<a href="#" class="text-light">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- copyright part end -->
+</footer>
+
+<!-- jQuery -->
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+<!-- slick -->
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<!-- venobox -->
+<script src="{% static 'plugins/venobox/venobox.min.js' %}"></script>
+<!-- Aos -->
+<script src="{% static 'plugins/aos/aos.js' %}"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+<script src="{% static 'plugins/google-map/gmap.js' %}"></script>
+<!-- Main Script -->
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+
+
+</html>
