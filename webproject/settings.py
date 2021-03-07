@@ -25,7 +25,7 @@ SECRET_KEY = 'sce-kt)w$+)3ofhvlpy#*ba*4e6fo6%#!3wpz5)bj5jg1h@lpx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['danconsultwebsite.herokuapp.com/']
 
 
 # Application definition
